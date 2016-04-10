@@ -1,8 +1,8 @@
 package uk.ac.qub.generics;
 
-public class GenericMethodsCountOccurences {
+public class GenericMethodsCountOccurrences {
 
-	public GenericMethodsCountOccurences() {
+	public GenericMethodsCountOccurrences() {
 		// TODO Auto-generated constructor stub
 	}
 
