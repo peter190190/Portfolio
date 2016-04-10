@@ -1,6 +1,7 @@
-package uk.ac.qub.palindrome;
+package uk.ac.qub.paldindrome;
 
 import java.util.regex.Pattern;
+
 
 /**
  * A class that has two methods that can be used to assert if
@@ -8,30 +9,32 @@ import java.util.regex.Pattern;
  * @author Peter
  *
  */
-public class Palindrome {
+public class Paldindrome {
 
 	/**
-	 * Default constructor
+	 * Default Constructor
 	 */
-	public Palindrome() {
+	public Paldindrome() {
 		// TODO Auto-generated constructor stub
 	}
 
 	/**
-	 * 
+	 * Adhoc test of 2 methods
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		
+
 		char[] word = new char[] {'A', 'n', 'n', 'a'};
 		String word2 = "Anna"; 
 		
 		System.out.println(isPalindrome(word));
 		System.out.println(isPalindrome(word2));
+
 	}
-	
+
 	/**
-	 * 
+	 * Take an array of chars and decide whether they collectively form
+	 * a palindrome
 	 * @param word
 	 * @return
 	 */
@@ -56,7 +59,7 @@ public class Palindrome {
 	}
 	
 	/**
-	 * 
+	 * Assert if the string input equals itself reversed
 	 * @param str
 	 * @return
 	 */
@@ -69,4 +72,5 @@ public class Palindrome {
 	    }
 
 	}
+	
 }
