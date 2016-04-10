@@ -5,7 +5,7 @@ package uk.ac.qub.fizzbuzz;
  * @author Peter
  * Classic FizzBuzz test with a separate print function
  */
-public class FizzBuzz {
+public class FizzBuzzTester {
 	
 	// private instance variables
 	private static final int LOWER_LIMIT = 15;
