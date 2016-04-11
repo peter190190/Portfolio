@@ -159,7 +159,7 @@ public class Main {
 		frame.setDefaultCloseOperation(3);
 		frame.setVisible(true);
 		frame.setResizable(true);
-		frame.setSize(450, 450);
+		frame.setSize(500, 500);
 		
 		JPanel panel = new JPanel();
 		frame.setContentPane(panel);
@@ -205,7 +205,7 @@ public class Main {
 			panel.add(grid[i]);
 		}
 		
-		frame.setSize(450, 450);
+		frame.setSize(500, 500);
 	}
 	
 	/**
