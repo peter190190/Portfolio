@@ -219,7 +219,7 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * Set icons to .png images created in photoshop
 	 */
 	public void init_icons() {
 		
