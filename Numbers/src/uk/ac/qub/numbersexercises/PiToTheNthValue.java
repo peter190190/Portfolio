@@ -3,9 +3,9 @@ package uk.ac.qub.numbersexercises;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class NumbersExercises {
+public class PiToTheNthValue {
 
-	public NumbersExercises() {
+	public PiToTheNthValue() {
 		// TODO Auto-generated constructor stub
 	}
 
