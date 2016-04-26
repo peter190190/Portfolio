@@ -16,6 +16,13 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 /**
+ * A simple desktop application that runs a game of noughts and crosses.
+ * A 3x3 grid is simulated via an array of ints(9 elements).
+ * .png files are used to represent the 'x' and 'o' icons.
+ * 
+ * The program will have win and draw conditions.
+ * The program will have validation in the form of a window dialog.
+ * The program will utilise swing for the GUI.
  * 
  * @author Peter
  *
@@ -62,7 +69,8 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * Method that checks win conditions by comparing 3 'board' i.e. array elements:
+	 * Horizontal/Vertical/Diagnol
 	 */
 	public void checkWin() {
 		
@@ -99,22 +107,24 @@ public class Main {
 		for(int i = 0; i < board.length; i++) {
 			if(board[i] == 0)return;
 		}
-		
+		// Execute draw dialog
 		if(!won)
 			draw();
 		
 	}
 	
 	/**
-	 * 
+	 * A win condition has been triggered.
 	 * @param square
 	 */
 	public void win(int square) {
 		
 		won = true;
 		
+		// Check if the 'x' or 'o' player has won
 		String winner = board[square] == 1 ? "X" : "O";
 		
+		// Post-win dialog pane with restart or exit functionality.
 		if(JOptionPane.showConfirmDialog(new JFrame("Winner! Congratulations " +winner), "Player " +winner +" has won! Would you like to play again?") == JOptionPane.YES_OPTION) {
 			restart();
 		}else{
@@ -125,7 +135,7 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * Clear the grid of icons for game restart
 	 */
 	public void restart() {
 		
@@ -139,7 +149,7 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * Draw triggered
 	 */
 	public void draw() {
 		
@@ -151,7 +161,7 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * GUI implementation with action listeners on each grid square
 	 */
 	public void init_components() {
 		
@@ -236,7 +246,7 @@ public class Main {
 	}
 	
 	/**
-	 * 
+	 * Main method.
 	 * @param args
 	 */
 	public static void main(String[] args) {

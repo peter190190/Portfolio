@@ -39,7 +39,7 @@ public class RecursionCountToOneHundred {
 		try {
 			number = scanner.nextInt();
 		} catch (InputMismatchException ex) {
-			System.out.println("Invalid input, ensure you are using an integer.");
+			System.out.println("INVALID .");
 			ex.printStackTrace();
 			scanner.next();
 			System.out.println();
