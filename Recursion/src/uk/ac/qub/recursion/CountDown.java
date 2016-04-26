@@ -1,5 +1,10 @@
 package uk.ac.qub.recursion;
 
+/**
+ * A simple class that demonstrates how recursion can replace iteration
+ * @author Peter
+ *
+ */
 public class CountDown {
 
 	public CountDown() {
@@ -13,6 +18,10 @@ public class CountDown {
 
 	}
 
+	/**
+	 * 
+	 * @param num
+	 */
 	private static void countDown(int num) {
 
 		
